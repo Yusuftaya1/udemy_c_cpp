@@ -4,9 +4,12 @@
 
 int main(){
     setlocale(LC_ALL, "Turkish");
-    /*
+    
     int *alan1 = malloc(10*sizeof(int)); // ramde yer ayırma fonk.
-    int *alan2 = calloc(10 , sizeof(int)); // adreste bulunan değerleri korumaz 
+    int *alan2 = calloc(10 , sizeof(int)); // adreste bulunan değerleri sıfılar
+
+    printf("%p\n",*alan1);
+    printf("%d\n",*alan2);
 
     for(int i=0;i<10;i++){
         printf("alan1 [%d] = %d alan2[%d] = %d \n",i,alan1[i],i,alan2[i]);
@@ -16,9 +19,9 @@ int main(){
     
     free(alan1);
     free(alan2); // alanlar sisteme geri verildi;
-    */
-
-    /*int *sayidizisi = calloc(10,sizeof(int));
+    
+////////////////////////////////////////////////////////////////////////////////////
+    int *sayidizisi = calloc(10,sizeof(int)); //değişken oluşulur değişkenin ADRESİ *sayidizisinde tutulur
     char *karakterdizisi = calloc(10,sizeof(char));
 
     karakterdizisi[0] = 'A';
@@ -28,8 +31,8 @@ int main(){
     for(int i=0;i<3;i++){
         printf("%c",karakterdizisi[i]);
     }
-    */
-
+    
+///////////////////////////////////////////////////////////////////////////////////
     char** karakterdizi;
     karakterdizi = malloc(sizeof(char*)*3);
     
@@ -44,7 +47,7 @@ int main(){
     for(int i=0;i<3;i++){
         printf("%s\n",karakterdizi[i]);
     }
-
+    
     return 0;
 
 }
