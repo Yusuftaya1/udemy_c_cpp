@@ -4,6 +4,8 @@
         "string.h": "c",
         "stdlib.h": "c",
         "stdio.h": "c",
-        "locale.h": "c"
+        "locale.h": "c",
+        "iostream": "cpp",
+        "ostream": "cpp"
     }
 }
